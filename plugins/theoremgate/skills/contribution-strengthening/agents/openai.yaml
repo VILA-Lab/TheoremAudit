@@ -1,0 +1,4 @@
+interface:
+  display_name: "Contribution Strengthening"
+  short_description: "Strengthen results toward the selected paper goal"
+  default_prompt: "Use $contribution-strengthening to extend the accepted result package toward the researcher’s selected publication goal."

@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="theme-color" content="#101820">
+  <title>Launch TheoremAudit</title>
+  <link rel="stylesheet" href="/launch.css">
+</head>
+<body>
+  <div class="page">
+    <header class="topbar">
+      <a class="brand" href="/launch.html" aria-label="TheoremAudit launch">
+        <img src="/logo.svg" alt="">
+        <span><b>TheoremAudit</b><small>Research launch</small></span>
+      </a>
+      <div id="studioStatus" class="status checking"><i></i><span>Checking web interface</span></div>
+    </header>
+
+    <main class="launch-board">
+      <section class="hero-copy">
+        <div class="panel-kicker">TheoremAudit Launch</div>
+        <h1>Start a governed theory run from an idea, prompt, or research question.</h1>
+        <p>TheoremAudit uses Codex to turn early research intent into auditable theory development, proof checks, evidence routing, and paper writing only when the evidence supports it.</p>
+      </section>
+
+      <section class="question-panel">
+        <div class="panel-kicker">Idea, prompt, or research question</div>
+        <label class="question-field">
+          <textarea id="launchQuestion" rows="5" aria-label="Research idea, prompt, or question" placeholder="Example: I want a theory-first ML research direction around dependent LLM self-consistency, with assumptions, proofs, audits, and only evidence-supported paper writing."></textarea>
+        </label>
+        <div class="launch-controls" aria-label="Research launch settings">
+          <label><span>Mode</span><select id="launchMode"><option value="theory_first">Theory first</option><option value="research_to_paper">Research to paper when eligible</option></select></label>
+          <label><span>Model preference</span><input id="launchModel" type="text" maxlength="80" placeholder="Use my Codex default"></label>
+          <label class="wide"><span>Constraints</span><input id="launchConstraints" type="text" placeholder="Optional: venue, methods, caveats, datasets, or scope limits"></label>
+        </div>
+      </section>
+
+      <section class="route-panel">
+        <div class="route-heading">
+          <div>
+            <div class="panel-kicker">Research launch specification</div>
+            <h2>Prepare a governed Codex prompt or local command.</h2>
+          </div>
+        </div>
+
+        <div class="launch-spec-grid">
+          <article class="launch-spec-preview">
+            <div class="snippet-title"><span>launch summary</span><button id="copyLaunchSpec" type="button">Copy summary</button></div>
+            <pre id="launchSpecJson"></pre>
+          </article>
+          <aside class="launch-actions">
+            <button id="copyCodex" class="action-card primary-action" type="button"><span>Use in Codex</span><b>Copy governed agent prompt</b></button>
+            <button id="downloadLaunchSpec" class="action-card" type="button"><span>Save summary</span><b>Download JSON record</b></button>
+            <button id="copyTerminal" class="action-card" type="button"><span>Run locally</span><b>Copy terminal command</b></button>
+            <div class="local-command">
+              <span>Local command preview</span>
+              <pre id="terminalPrompt"></pre>
+            </div>
+          </aside>
+        </div>
+
+      </section>
+    </main>
+    <footer class="launch-footer">
+      <div id="handoffNote" class="handoff-note">
+        <b>How this opens:</b>
+        <span>Paste the prompt into Codex or copy the terminal command. The JSON summary is a record of the requested run.</span>
+      </div>
+      <a id="openStudio" class="studio-link disabled" href="/">Open web interface</a>
+    </footer>
+  </div>
+  <div id="toast" class="toast"></div>
+  <script src="/launch.js"></script>
+</body>
+</html>

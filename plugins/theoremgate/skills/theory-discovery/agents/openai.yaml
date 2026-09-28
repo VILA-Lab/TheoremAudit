@@ -1,0 +1,5 @@
+interface:
+  display_name: "TheoremAudit Theory Discovery"
+  short_description: "Formalize targets, assumptions, and proof obligations."
+  default_prompt: "Use $theory-discovery to formalize and probe this theory question."
+

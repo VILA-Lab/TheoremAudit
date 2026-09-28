@@ -1,0 +1,44 @@
+{
+  "schema_version": 2,
+  "venue": "ICML",
+  "full_name": "International Conference on Machine Learning",
+  "publication_format": "conference",
+  "page_limit": 8,
+  "page_limit_scope": "main_text",
+  "appendix": "unlimited",
+  "format": "icml",
+  "style_file": "icml2026.sty",
+  "assets": [
+    {"path": "icml2026.sty", "role": "style", "required": true, "stage": true},
+    {"path": "icml2026.bst", "role": "bibliography", "required": true, "stage": true},
+    {"path": "fancyhdr.sty", "role": "support", "required": true, "stage": true}
+  ],
+  "asset_sha256": {
+    "icml2026.sty": "7cdcf90f6a59c5219e7f15c88f7ed09fcaf598dad91e6cdddc4dc3cb0e397a95",
+    "icml2026.bst": "0ec3d5eb9b02efb7e0b44a32f3775882f42a743d0bdc618f34e6936309b98764",
+    "fancyhdr.sty": "9130c52f91087abc6d223164ffa587e207e3257fcbcd069ef09ecb5391043f14"
+  },
+  "snapshot_provenance": {
+    "source_url": "https://icml.cc/Conferences/2026/AuthorInstructions",
+    "asset_url": "https://media.icml.cc/Conferences/ICML2026/Styles/icml2026.zip",
+    "captured_at": "2026-08-18T17:01:57Z",
+    "official_rules_verified": true,
+    "official_rules_verified_at": "2026-08-18T17:01:57Z",
+    "redistribution_evidence": null,
+    "redistribution_status": "unverified"
+  },
+  "blind_review": true,
+  "empirical_expected": true,
+  "theory_track": true,
+  "rolling_review": false,
+  "typical_deadline": "January",
+  "notification": "May",
+  "world_fit": [
+    "theorem_paper",
+    "framework_paper"
+  ],
+  "theory_bar": "high",
+  "novelty_bar": "high",
+  "notes": "Balanced theory+experiments preferred. Pure theory harder to get in than NeurIPS/ICLR. 8 page limit is tight.",
+  "bibstyle": "icml2026"
+}

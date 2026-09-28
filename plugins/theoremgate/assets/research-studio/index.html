@@ -1,0 +1,221 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="theme-color" content="#0c1714">
+  <title>TheoremAudit Web Interface</title>
+  <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+  <div class="app-shell new-research">
+    <header class="topbar">
+      <div class="brand">
+        <div class="brand-mark" aria-hidden="true"><span></span></div>
+        <div>
+          <div class="kicker">Web interface</div>
+          <h1>TheoremAudit</h1>
+        </div>
+      </div>
+      <div class="run-control">
+        <label for="runSelect">Research run</label>
+        <select id="runSelect"><option value="">New research</option></select>
+      </div>
+      <div class="top-actions">
+        <div id="syncState" class="sync"><i></i><span>Connecting</span></div>
+        <button id="refreshButton" class="icon-button" title="Refresh evidence" aria-label="Refresh evidence">↻</button>
+      </div>
+    </header>
+
+    <section id="researchSummary" class="research-strip hidden">
+      <div class="question-wrap">
+        <span class="kicker">Research question</span>
+        <h2 id="question"></h2>
+      </div>
+      <div class="route-card">
+        <span class="kicker">Manuscript</span>
+        <strong id="routeTier">—</strong>
+        <small id="routeMeta">—</small>
+      </div>
+    </section>
+
+    <section id="executionBar" class="execution-bar hidden" aria-label="Run execution">
+      <div class="execution-summary" role="status" aria-live="polite">
+        <strong id="executionStatus">Checking execution</strong>
+        <span id="executionDetail"></span>
+        <span id="experimentActivity" class="experiment-activity hidden"></span>
+      </div>
+      <button id="resumeRun" class="primary resume-button" type="button" disabled><span aria-hidden="true">&#9654;</span><b>Resume run</b></button>
+    </section>
+
+    <div class="workspace-grid">
+      <aside class="rail">
+        <nav aria-label="TheoremAudit views">
+          <button class="nav-item active" data-view="run"><span>▶</span><b>Research</b><i id="runnerBadge">—</i></button>
+          <button class="nav-item" data-view="pipeline" disabled><span>→</span><b>Stages</b><i id="stageBadge" class="hidden">status</i></button>
+          <button class="nav-item" data-view="diagnostics" disabled><span>!</span><b>Issues</b><i id="diagnosticBadge">0</i></button>
+          <button class="nav-item" data-view="map" disabled><span>⌘</span><b>Evidence</b></button>
+          <button class="nav-item" data-view="manuscript" disabled><span>¶</span><b>Paper</b></button>
+        </nav>
+        <div class="rail-section">
+          <div class="rail-title">Objects</div>
+          <div id="kindFilters" class="kind-filters"></div>
+        </div>
+        <div class="rail-footer">
+          <span>Auto-refresh</span><button id="liveToggle" class="toggle on" aria-label="Toggle auto refresh"><i></i></button>
+        </div>
+      </aside>
+
+      <main class="canvas-panel">
+        <section id="mapView" class="view">
+          <div class="view-toolbar evidence-toolbar">
+            <div>
+              <span class="kicker">Governed contribution</span>
+              <h3>Results, support, and publication readiness</h3>
+            </div>
+            <div class="evidence-actions">
+              <div id="evidenceMode" class="segmented evidence-mode" aria-label="Evidence display">
+                <button class="active" data-evidence-mode="overview">Results overview</button>
+                <button data-evidence-mode="graph">Advanced graph</button>
+              </div>
+              <button id="evidenceFullscreen" class="evidence-fullscreen-button" type="button" title="Enter fullscreen" aria-label="Enter fullscreen" aria-pressed="false" aria-controls="mapView">
+                <!-- Lucide maximize/minimize icons; see LUCIDE-LICENSE.txt. -->
+                <svg class="expand-icon" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M8 3H5a2 2 0 0 0-2 2v3"/><path d="M21 8V5a2 2 0 0 0-2-2h-3"/><path d="M3 16v3a2 2 0 0 0 2 2h3"/><path d="M16 21h3a2 2 0 0 0 2-2v-3"/></svg>
+                <svg class="collapse-icon" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M8 3v3a2 2 0 0 1-2 2H3"/><path d="M21 8h-3a2 2 0 0 1-2-2V3"/><path d="M3 16h3a2 2 0 0 1 2 2v3"/><path d="M16 21v-3a2 2 0 0 1 2-2h3"/></svg>
+              </button>
+            </div>
+          </div>
+          <div id="resultsOverview" class="results-overview"></div>
+          <div id="advancedGraph" class="advanced-graph hidden">
+            <div class="map-controls graph-toolbar">
+              <div id="graphPresets" class="segmented" aria-label="Argument-map lens">
+                <button class="active" data-preset="core">Core</button>
+                <button data-preset="stress">Stress test</button>
+                <button data-preset="paper">Paper trace</button>
+                <button data-preset="all">All</button>
+              </div>
+              <div class="search-wrap"><span>⌕</span><input id="graphSearch" type="search" placeholder="Find an assumption, theorem, proof…"></div>
+            </div>
+            <div id="graphViewport" class="graph-viewport">
+              <svg id="edgeLayer" class="edge-layer" aria-hidden="true"></svg>
+              <div id="graphColumns" class="graph-columns"></div>
+            </div>
+            <div class="graph-legend"><span><i class="edge-sample"></i> dependency</span><span>Click any object to inspect and act</span></div>
+          </div>
+        </section>
+
+        <section id="diagnosticsView" class="view" tabindex="0" aria-label="Research issues">
+          <div class="view-toolbar"><div><span class="kicker">Review summary</span><h3>Mathematical and manuscript review</h3></div></div>
+          <div id="diagnosticDecision" class="diagnostic-decision"></div>
+          <section id="claimImpact" class="claim-impact"></section>
+          <div id="diagnosticsList" class="diagnostics-list"></div>
+        </section>
+
+        <section id="manuscriptView" class="view">
+          <div class="view-toolbar manuscript-toolbar">
+            <div><span class="kicker">Claim-traced manuscript</span><h3>Reviewed paper and researcher revisions</h3></div>
+            <div class="manuscript-actions"><a id="openPdf" class="button-link" target="_blank" rel="noopener">Open PDF</a><button id="revisePaper" class="primary">Request paper changes</button></div>
+          </div>
+          <div id="noManuscript" class="no-manuscript hidden"><div class="empty-glyph">∅</div><h3>The reviewed manuscript is not ready yet</h3><p>The paper becomes current after compilation, independent review, and any required automatic revision.</p></div>
+          <div id="manuscriptWorkspace" class="manuscript-workspace">
+            <div class="paper-frame"><iframe id="paperFrame" title="Compiled TheoremAudit paper"></iframe></div>
+            <aside class="paper-review">
+              <div id="paperEditPanel" class="paper-panel paper-edit-panel">
+                <h4>What would you like to change?</h4>
+                <p>Describe the revision in your own words. The agent will determine which paper or research stages must be reopened.</p>
+                <label class="paper-edit-field"><span>Revision request</span><textarea id="paperEditInstructions" rows="6" placeholder="For example: expand the comparison with stability literature, rewrite the abstract more precisely, improve Figure 2, or reconsider the proof assumption in Theorem 1."></textarea></label>
+                <button id="submitPaperEdit" class="primary" type="button">Plan and revise the paper →</button>
+              </div>
+              <div class="paper-panel"><h4>Paper sections</h4><div id="paperSections" class="paper-sections"></div></div>
+            </aside>
+          </div>
+        </section>
+
+        <section id="pipelineView" class="view">
+          <div class="view-toolbar"><div><span class="kicker">Research pathway</span><h3>Progress, autonomous decisions, and revision cycles</h3></div></div>
+          <div id="lineageSummary" class="lineage-summary"></div>
+          <div id="workflowPhases" class="workflow-phases"></div>
+        </section>
+
+        <section id="runView" class="view run-view active">
+          <div class="view-toolbar run-toolbar">
+            <div><span class="kicker">TheoremAudit</span><h3>Develop a research contribution</h3></div>
+            <div id="runnerAvailability" class="runner-availability"><i></i><span>Checking Codex CLI</span></div>
+          </div>
+          <div class="run-workspace">
+            <form id="newRunForm" class="launch-card">
+              <div class="launch-intro">
+                <span class="kicker">New research</span>
+                <h4>What should TheoremAudit investigate?</h4>
+                <p>Describe a research question, an early idea, or a result you want to understand. Starting the run immediately authorizes autonomous governed execution, and TheoremAudit preserves every decision.</p>
+              </div>
+              <label id="questionField" class="field wide"><span id="questionLabel">Research question</span><textarea id="researchQuestion" rows="4" placeholder="State a precise theoretical or empirical research question…"></textarea></label>
+              <input id="workflowMode" type="hidden" value="full">
+              <label id="constraintsField" class="field wide"><span>Constraints <em>optional</em></span><textarea id="runConstraints" rows="4" placeholder="Scope, methods, datasets, or non-negotiable caveats…"></textarea></label>
+              <div class="execution-note"><b>Autonomous full research-to-paper workflow</b><span>Every new run attempts original research, chooses the strongest valid route automatically, and ends with an evidence-consistent paper package.</span></div>
+              <div class="launch-footer"><div class="execution-note"><b id="executionIntent">A new research run will be created</b><span>Starting immediately authorizes autonomous execution; all evidence remains available throughout the workflow.</span></div><button id="startRun" class="primary launch-button" type="submit">Start research <span>→</span></button></div>
+            </form>
+
+            <section id="consoleCard" class="console-card quiet">
+              <div class="console-head"><div><span class="kicker">Codex activity</span><h4 id="jobTitle">No active session</h4></div><div class="console-actions"><span id="jobStatus" class="job-status idle">idle</span><button id="cancelJob" class="danger-button hidden" type="button">Stop</button></div></div>
+              <div id="jobMeta" class="job-meta">Start a run or launch an action from the argument map or manuscript review.</div>
+              <section id="jobOutcome" class="job-outcome hidden"><div><span>Execution outcome</span><p id="jobOutcomeSummary"></p></div></section>
+              <div id="eventFeed" class="event-feed"><div class="console-empty"><span>⌁</span><p>Codex sessions launched from this Workspace appear here. Work launched in another terminal is reflected through saved Stages and Evidence.</p></div></div>
+              <div class="history-panel"><div class="history-title"><span>Sessions for this research run</span><small>Persisted locally</small></div><div id="jobHistory" class="job-history"></div></div>
+            </section>
+          </div>
+        </section>
+      </main>
+
+      <aside class="inspector">
+        <div id="emptyInspector" class="empty-inspector">
+          <div class="empty-glyph">⌁</div>
+          <h3>Select a research object</h3>
+          <p>Inspect its scope, evidence, dependencies, caveats, and downstream use.</p>
+        </div>
+        <section id="issueInspector" class="issue-inspector hidden" aria-labelledby="issueTitle">
+          <div class="inspector-head">
+            <span class="object-kind">Issue details</span>
+            <button id="closeIssueInspector" class="bare" aria-label="Close issue details">×</button>
+          </div>
+          <h3 id="issueTitle" tabindex="-1"></h3>
+          <div id="issueStatus" class="status-pill"></div>
+          <dl class="detail"><dt>Finding</dt><dd id="issueMessage"></dd></dl>
+          <dl class="detail"><dt>Recommended next step</dt><dd id="issueAction"></dd></dl>
+          <dl class="detail"><dt>Related evidence</dt><dd id="issueTargets"></dd></dl>
+          <dl class="detail"><dt>Source</dt><dd id="issueSource" class="source-path"></dd></dl>
+        </section>
+        <div id="objectInspector" class="object-inspector hidden">
+          <div class="inspector-head">
+            <span id="objectKind" class="object-kind"></span>
+            <button id="closeInspector" class="bare" aria-label="Close inspector">×</button>
+          </div>
+          <h3 id="objectTitle"></h3>
+          <div id="objectStatus" class="status-pill"></div>
+          <p id="objectSummary" class="object-summary"></p>
+          <div id="objectRelations" class="relations"></div>
+          <div id="objectDetails" class="details"></div>
+          <div id="objectSource" class="source-path"></div>
+          <div class="action-grid">
+            <button data-action="challenge">Challenge</button>
+            <button data-action="repair">Plan revision</button>
+            <button data-action="trace">Trace evidence</button>
+            <button data-action="strengthen">Strengthen</button>
+          </div>
+        </div>
+      </aside>
+    </div>
+  </div>
+
+  <section id="commandDrawer" class="command-drawer" aria-live="polite">
+    <div class="command-head"><div><span class="kicker">Codex handoff</span><h3 id="commandTitle">Research action</h3></div><button id="closeCommand" class="bare">×</button></div>
+    <p>This prompt is grounded in the selected run and object. You can copy it, or explicitly launch it as a separate local Codex session.</p>
+    <textarea id="commandPrompt" rows="8"></textarea>
+    <div class="command-options"><label><span>Model <em>optional</em></span><input id="actionModel" type="text" maxlength="80" placeholder="Configured default"></label></div>
+    <div class="command-actions"><span id="copyState"></span><div><button id="copyPrompt">Copy prompt</button><button id="runPrompt" class="primary">Run with Codex →</button></div></div>
+  </section>
+  <div id="scrim" class="scrim"></div>
+  <div id="toast" class="toast"></div>
+  <script src="/app.js"></script>
+</body>
+</html>

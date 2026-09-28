@@ -1,0 +1,4 @@
+interface:
+  display_name: "TheoremAudit Significance Audit"
+  short_description: "Audit application relevance, evidence, and significance."
+  default_prompt: "Use $significance-audit to assess whether this result has sufficient application evidence and significance."

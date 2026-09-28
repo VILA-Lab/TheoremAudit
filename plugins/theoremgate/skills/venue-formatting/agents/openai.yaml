@@ -1,0 +1,5 @@
+interface:
+  display_name: "TheoremAudit Venue Formatting"
+  short_description: "Select and apply venue-specific paper templates."
+  default_prompt: "Use $venue-formatting to package this paper for an appropriate venue."
+

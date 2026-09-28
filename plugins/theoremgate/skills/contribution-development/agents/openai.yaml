@@ -1,0 +1,5 @@
+interface:
+  display_name: "TheoremAudit Contribution Development"
+  short_description: "Assess novelty, significance, and paper readiness."
+  default_prompt: "Use $contribution-development to assess and strengthen this contribution."
+

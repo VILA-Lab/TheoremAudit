@@ -1,0 +1,5 @@
+interface:
+  display_name: "TheoremAudit Manuscript Writing"
+  short_description: "Write an evidence-bounded theory manuscript."
+  default_prompt: "Use $manuscript-writing to turn this accepted theory bundle into a paper."
+

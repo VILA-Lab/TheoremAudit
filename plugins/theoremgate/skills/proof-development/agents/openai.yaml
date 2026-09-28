@@ -1,0 +1,5 @@
+interface:
+  display_name: "TheoremAudit Proof Development"
+  short_description: "Develop dependency-aware, auditable proofs."
+  default_prompt: "Use $proof-development to design and draft a rigorous proof."
+

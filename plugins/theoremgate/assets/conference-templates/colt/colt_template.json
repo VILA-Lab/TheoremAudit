@@ -1,0 +1,50 @@
+{
+  "schema_version": 2,
+  "venue": "COLT",
+  "full_name": "Conference on Learning Theory",
+  "publication_format": "conference",
+  "page_limit": 12,
+  "page_limit_scope": "main_text",
+  "appendix": "unlimited_after_references",
+  "format": "pmlr_colt2026",
+  "style_file": "colt2026.cls",
+  "class_options": ["anon", "12pt"],
+  "bibstyle": "plainnat",
+  "main_tex": "colt2026-sample.tex",
+  "assets": [
+    {"path": "colt2026.cls", "role": "style", "required": true, "stage": true},
+    {"path": "colt2026-sample.tex", "role": "main_tex", "required": true, "stage": true},
+    {"path": "jmlr.cls", "role": "support", "required": true, "stage": true},
+    {"path": "jmlrutils.sty", "role": "support", "required": true, "stage": true}
+  ],
+  "files": ["colt2026.cls", "colt2026-sample.tex", "jmlr.cls", "jmlrutils.sty"],
+  "asset_sha256": {
+    "colt2026.cls": "c0d775cf3a1637a6ce7f1627a39df512f4765e292c950bb7d13ac743fae9f8a2",
+    "colt2026-sample.tex": "551ed4a5cf49286c0e066c0c72d514b4cb172f39b173b123b7229cb3e0e44635",
+    "jmlr.cls": "105ba77a8d57d9e991e34d4b9c9da60b6fa0334c80cae6fc21c31e23ae6c1baa",
+    "jmlrutils.sty": "87ad4373179051c77d9257e8196dddb758dd838700985c289e16ec939faaaaba"
+  },
+  "snapshot_provenance": {
+    "source_url": "https://learningtheory.org/colt2026/cfp.html",
+    "asset_source_url": "https://learningtheory.org/colt2026/colt2026-style.zip",
+    "source_archive_sha256": "e4e93d8bd2ebd681e0c2617f0410200acb92a0dc1c0da66f3c5342608ef47212",
+    "captured_at": "2026-08-14T21:33:29Z",
+    "official_rules_verified": true,
+    "official_rules_verified_at": "2026-08-14T21:33:29Z",
+    "redistribution_evidence": null,
+    "redistribution_status": "unverified"
+  },
+  "blind_review": true,
+  "empirical_expected": false,
+  "theory_track": true,
+  "rolling_review": false,
+  "typical_deadline": "February",
+  "notification": "May",
+  "world_fit": [
+    "theorem_paper",
+    "negative_result_paper"
+  ],
+  "theory_bar": "very_high",
+  "novelty_bar": "very_high",
+  "notes": "COLT 2026 uses the official PMLR-based class with [anon,12pt] for double-blind submission. The main body is limited to 12 pages; references and appendices are excluded from that limit."
+}

@@ -1,0 +1,82 @@
+\documentclass[anon,12pt]{colt2026} % Anonymized submission
+%\documentclass[final,12pt]{colt2026} % Include author names
+
+% The following packages will be automatically loaded:
+% amsmath, amssymb, natbib, graphicx, url, algorithm2e
+
+\title[Short Title]{Full Title of Article}
+\usepackage{times}
+% Use \Name{Author Name} to specify the name.
+% If the surname contains spaces, enclose the surname
+% in braces, e.g. \Name{John {Smith Jones}} similarly
+% if the name has a "von" part, e.g \Name{Jane {de Winter}}.
+% If the first letter in the forenames is a diacritic
+% enclose the diacritic in braces, e.g. \Name{{\'E}louise Smith}
+
+% Two authors with the same address
+% \coltauthor{\Name{Author Name1} \Email{abc@sample.com}\and
+%  \Name{Author Name2} \Email{xyz@sample.com}\\
+%  \addr Address}
+
+% Three or more authors with the same address:
+% \coltauthor{\Name{Author Name1} \Email{an1@sample.com}\\
+%  \Name{Author Name2} \Email{an2@sample.com}\\
+%  \Name{Author Name3} \Email{an3@sample.com}\\
+%  \addr Address}
+
+% Authors with different addresses:
+\coltauthor{%
+ \Name{Author Name1} \Email{abc@sample.com}\\
+ \addr Address 1
+ \AND
+ \Name{Author Name2} \Email{xyz@sample.com}\\
+ \addr Address 2%
+}
+
+\begin{document}
+
+\maketitle
+
+\begin{abstract}%
+  This is a great paper and it has a concise abstract.%
+\end{abstract}
+
+\begin{keywords}%
+  List of keywords%
+\end{keywords}
+
+\section{Introduction}
+
+This is where the content of your paper goes.
+\begin{itemize}
+  \item Limit the main text (not counting references and appendices) to 12 PMLR-formatted pages, using this template. Please add any additional appendix to the same file after references - there is no page limit for the appendix.
+  \item Include, either in the main text or the appendices, \emph{all} details, proofs and derivations required to substantiate the results.
+  \item The contribution, novelty and significance of submissions will be judged primarily based on
+\textit{the main text of 12 pages}. Thus, include enough details, and overview of key arguments, 
+to convince the reviewers of the validity of result statements, and to ease parsing of technical material in the appendix.
+  \item Use the \textbackslash documentclass[anon,12pt]\{colt2026\} option during submission process -- this automatically hides the author names listed under \textbackslash coltauthor. Submissions should NOT include author names or other identifying information in the main text or appendix. To the extent possible, you should avoid including directly identifying information in the text. You should still include all relevant references, discussion, and scientific content, even if this might provide significant hints as to the author identity. But you should generally refer to your own prior work in third person. Do not include acknowledgments in the submission. They can be added in the camera-ready version of accepted papers. 
+  
+  Please note that while submissions must be anonymized, and author names are withheld from reviewers, they are known to the area chair overseeing the paper’s review.  The assigned area chair is allowed to reveal author names to a reviewer during the rebuttal period, upon the reviewer’s request, if they deem such information is needed in ensuring a proper review.  
+  \item Use \textbackslash documentclass[final,12pt]\{colt2026\} only during camera-ready submission.
+\end{itemize}
+
+
+
+% Acknowledgments---Will not appear in anonymized version
+\acks{We thank a bunch of people and funding agency.}
+
+\bibliography{yourbibfile}
+
+\appendix
+
+% \crefalias{section}{appendix} % uncomment if you are using cleveref
+
+\section{My Proof of Theorem 1}
+
+This is a boring technical proof.
+
+\section{My Proof of Theorem 2}
+
+This is a complete version of a proof sketched in the main text.
+
+\end{document}

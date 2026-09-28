@@ -1,0 +1,29 @@
+# Local secrets
+.env
+.env.*
+
+# Generated run state
+.theoremgate/
+runs/
+state/
+logs/
+outputs/
+papers/
+manuscript_inputs/
+
+# Python caches
+__pycache__/
+*.py[cod]
+.pytest_cache/
+
+# OS/editor files
+.DS_Store
+.vscode/
+
+# Temporary files
+tmp/
+tmp_*.json
+texput.log
+
+# Archives
+*.zip

@@ -1,0 +1,20 @@
+\NeedsTeXFormat{LaTeX2e}
+\ProvidesPackage{research_draft}[2026/08/16 Neutral research-development format]
+\RequirePackage[margin=1in]{geometry}
+\RequirePackage{microtype}
+\RequirePackage{xcolor}
+\definecolor{ResearchInk}{HTML}{243044}
+\definecolor{ResearchMuted}{HTML}{687386}
+\newcommand{\researchdraftnotice}{%
+  \color{ResearchInk}%
+  \begingroup
+  \centering\small\color{ResearchMuted}
+  Development evidence report --- not a submission venue\par
+  \vspace{0.6em}
+  \endgroup
+}
+\let\researchdraftoriginalmaketitle\maketitle
+\renewcommand{\maketitle}{%
+  \researchdraftoriginalmaketitle
+  \researchdraftnotice
+}

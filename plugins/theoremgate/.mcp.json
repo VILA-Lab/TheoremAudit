@@ -1,0 +1,9 @@
+{
+  "mcpServers": {
+    "theoremgate-dashboard": {
+      "cwd": ".",
+      "command": "python3",
+      "args": ["./mcp/dashboard_server.py"]
+    }
+  }
+}

@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 420 96" role="img" aria-label="TheoremAudit">
+  <rect width="420" height="96" rx="18" fill="#17251f"/>
+  <g transform="translate(18 16)"><path d="M0 62V2h68v60M16 62V18h36v44" fill="none" stroke="#dceee5" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/><path d="M25 38h18" stroke="#e6a85c" stroke-width="7" stroke-linecap="round"/></g>
+  <text x="108" y="58" fill="#fffdf8" font-family="Georgia,serif" font-size="36" font-weight="600">TheoremAudit</text>
+  <text x="110" y="78" fill="#a9c9b9" font-family="Arial,sans-serif" font-size="12" letter-spacing="2">AUDITED RESEARCH</text>
+</svg>

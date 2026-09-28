@@ -1,0 +1,4 @@
+interface:
+  display_name: "TheoremAudit Workspace"
+  short_description: "Debug claims through a living evidence graph."
+  default_prompt: "Use $dashboard to open the interactive TheoremAudit evidence view for my latest run."

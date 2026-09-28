@@ -1,0 +1,33 @@
+{
+  "schema_version": 2,
+  "venue": "COLM",
+  "full_name": "Conference on Language Modeling",
+  "publication_format": "conference",
+  "page_limit": 9,
+  "page_limit_scope": "main_text",
+  "appendix": "unlimited",
+  "format": "colm",
+  "style_file": "colm2026_conference.sty",
+  "bibstyle": "colm2026_conference",
+  "assets": [
+    {"path": "colm2026_conference.sty", "role": "style", "required": true, "stage": true},
+    {"path": "colm2026_conference.bst", "role": "bibliography", "required": true, "stage": true},
+    {"path": "fancyhdr.sty", "role": "support", "required": true, "stage": true},
+    {"path": "natbib.sty", "role": "support", "required": true, "stage": true}
+  ],
+  "snapshot_provenance": {
+    "source_url": null,
+    "captured_at": null,
+    "official_rules_verified": false,
+    "official_rules_verified_at": null,
+    "redistribution_evidence": null,
+    "redistribution_status": "unverified"
+  },
+  "blind_review": true,
+  "empirical_expected": true,
+  "theory_track": true,
+  "world_fit": ["theorem_paper", "framework_paper", "negative_result_paper"],
+  "theory_bar": "medium",
+  "novelty_bar": "high",
+  "notes": "Conference on Language Modeling. Larochelle/ICLR-lineage style. Accepts theory relevant to language modeling."
+}

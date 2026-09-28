@@ -1,0 +1,36 @@
+{
+  "schema_version": 2,
+  "venue": "Research-Draft",
+  "full_name": "Neutral Research Draft",
+  "publication_format": "neutral",
+  "page_limit": null,
+  "page_limit_scope": "none",
+  "appendix": "included",
+  "format": "neutral_research_draft",
+  "style_file": "research_draft.sty",
+  "bibstyle": "plainnat",
+  "assets": [
+    {"path": "research_draft.sty", "role": "style", "required": true, "stage": true}
+  ],
+  "files": ["research_draft.sty"],
+  "asset_sha256": {
+    "research_draft.sty": "0400a07d6da71565e76da83cac2283a9eb71fc93463b486c7d336616c997fdaf"
+  },
+  "snapshot_provenance": {
+    "source_url": null,
+    "captured_at": "2026-08-16T00:00:00Z",
+    "official_rules_verified": false,
+    "official_rules_verified_at": null,
+    "redistribution_evidence": "Created in-repository as a neutral TheoremAudit development style.",
+    "redistribution_status": "verified"
+  },
+  "blind_review": false,
+  "empirical_expected": false,
+  "theory_track": true,
+  "neutral_draft": true,
+  "submission_branding": false,
+  "world_fit": ["theorem_paper", "negative_result_paper", "expository_note", "research_report"],
+  "theory_bar": "development",
+  "novelty_bar": "development",
+  "notes": "Neutral evidence-report layout with no minimum page count. It deliberately names no conference or journal, keeps targets advisory, and includes appendices in the same PDF."
+}

@@ -1,0 +1,5 @@
+interface:
+  display_name: "TheoremAudit Research Direction"
+  short_description: "Generate and select defensible theory directions."
+  default_prompt: "Use $research-direction to generate and compare rigorous research directions."
+

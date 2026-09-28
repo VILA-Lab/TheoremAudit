@@ -1,0 +1,4 @@
+interface:
+  display_name: "Proof Repair"
+  short_description: "Correct audited proofs and rerun validation"
+  default_prompt: "Use $proof-repair to correct the governed mathematical defect in the current TheoremAudit run and rerun the affected stages."

@@ -1,0 +1,39 @@
+{
+  "schema_version": 2,
+  "venue": "TMLR",
+  "full_name": "Transactions on Machine Learning Research",
+  "publication_format": "journal",
+  "page_limit": null,
+  "page_limit_scope": "none",
+  "appendix": "included",
+  "format": "tmlr",
+  "style_file": "tmlr.sty",
+  "assets": [
+    {"path": "tmlr.sty", "role": "style", "required": true, "stage": true},
+    {"path": "tmlr.bst", "role": "bibliography", "required": true, "stage": true},
+    {"path": "fancyhdr.sty", "role": "support", "required": true, "stage": true}
+  ],
+  "snapshot_provenance": {
+    "source_url": null,
+    "captured_at": null,
+    "official_rules_verified": false,
+    "official_rules_verified_at": null,
+    "redistribution_evidence": null,
+    "redistribution_status": "unverified"
+  },
+  "blind_review": true,
+  "empirical_expected": false,
+  "theory_track": true,
+  "rolling_review": true,
+  "typical_deadline": "rolling",
+  "notification": "2-4 months",
+  "world_fit": [
+    "theorem_paper",
+    "framework_paper",
+    "negative_result_paper"
+  ],
+  "theory_bar": "medium_high",
+  "novelty_bar": "medium_high",
+  "notes": "Rolling review with fast turnaround. Good for framework papers and negative results. Less competitive than NeurIPS/ICLR. No page limit.",
+  "bibstyle": "tmlr"
+}

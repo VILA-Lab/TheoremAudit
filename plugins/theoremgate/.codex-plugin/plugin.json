@@ -1,0 +1,36 @@
+{
+  "name": "theoremgate",
+  "version": "0.11.0+codex.20260922181856",
+  "description": "Complete Codex-native pipeline for governed theoretical ML research, evidence, experiments, manuscripts, review, and venue packaging.",
+  "author": {
+    "name": "TheoremAudit Contributors"
+  },
+  "skills": "./skills/",
+  "mcpServers": "./.mcp.json",
+  "interface": {
+    "displayName": "TheoremAudit",
+    "shortDescription": "Develop audited theory and complete research papers.",
+    "longDescription": "Starts immediately and autonomously executes direction selection, discovery, proof preflight, adversarial governance, bounded proof correction and contribution strengthening, honest paper routing, full-proof or evidence appendices, experiments, manuscript writing, review, revision, and automatic venue packaging with the active Codex model.",
+    "developerName": "TheoremAudit Contributors",
+    "category": "Education",
+    "capabilities": [
+      "Research",
+      "Write",
+      "Data Analysis",
+      "Interactive"
+    ],
+    "defaultPrompt": [
+      "Use TheoremAudit to run a new full governed research-to-paper pipeline and produce the strongest evidence-supported paper.",
+      "Use TheoremAudit to start a theory-first research run from my idea or research question.",
+      "Use TheoremAudit to open the research workspace and show the latest run.",
+      "Use TheoremAudit to audit my latest run and identify the next evidence or proof blocker.",
+      "Use TheoremAudit Proof Repair to correct an audited theorem defect and rerun the affected proof stages.",
+      "Use TheoremAudit Contribution Strengthening when an accepted result does not yet meet my selected publication goal.",
+      "Use TheoremAudit to continue my governed research pipeline autonomously from its persisted stage.",
+      "Use TheoremAudit to finish every full run with the strongest honest paper, including a null-result research report when no theorem survives audit."
+    ],
+    "brandColor": "#3157D5",
+    "composerIcon": "./assets/icon.svg",
+    "logo": "./assets/logo.svg"
+  }
+}

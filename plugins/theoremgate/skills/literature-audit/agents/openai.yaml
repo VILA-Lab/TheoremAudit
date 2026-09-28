@@ -1,0 +1,5 @@
+interface:
+  display_name: "TheoremAudit Literature Audit"
+  short_description: "Verify sources, novelty, and citation integrity."
+  default_prompt: "Use $literature-audit to verify the literature and citations for this claim."
+

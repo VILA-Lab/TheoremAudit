@@ -1,0 +1,4 @@
+interface:
+  display_name: "TheoremAudit Empirical Validation"
+  short_description: "Run rigorous experiments and polished figures."
+  default_prompt: "Use $empirical-validation to design auditable experiments and publication-ready figures for my accepted theoretical claims."

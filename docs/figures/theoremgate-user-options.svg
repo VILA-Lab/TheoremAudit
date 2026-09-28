@@ -1,0 +1,158 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1440" height="940" viewBox="0 0 1440 940" role="img" aria-labelledby="title desc">
+  <title id="title">TheoremAudit access interfaces</title>
+  <desc id="desc">A polished user-facing diagram showing Codex conversation, web interface, terminal interface, run intents, and governed outcomes.</desc>
+  <defs>
+    <linearGradient id="page" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#F8FAFC"/>
+      <stop offset="0.55" stop-color="#EEF4F8"/>
+      <stop offset="1" stop-color="#F7F4ED"/>
+    </linearGradient>
+    <linearGradient id="navy" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#102033"/>
+      <stop offset="1" stop-color="#253B5E"/>
+    </linearGradient>
+    <linearGradient id="blue" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#2D55D7"/>
+      <stop offset="1" stop-color="#6492F0"/>
+    </linearGradient>
+    <linearGradient id="teal" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#087568"/>
+      <stop offset="1" stop-color="#28B095"/>
+    </linearGradient>
+    <linearGradient id="amber" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#C87317"/>
+      <stop offset="1" stop-color="#F0B44C"/>
+    </linearGradient>
+    <linearGradient id="card" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#FFFFFF"/>
+      <stop offset="1" stop-color="#F8FBFE"/>
+    </linearGradient>
+    <filter id="shadow" x="-8%" y="-10%" width="116%" height="130%">
+      <feDropShadow dx="0" dy="14" stdDeviation="13" flood-color="#132B42" flood-opacity="0.14"/>
+    </filter>
+    <filter id="softShadow" x="-8%" y="-10%" width="116%" height="130%">
+      <feDropShadow dx="0" dy="8" stdDeviation="8" flood-color="#132B42" flood-opacity="0.10"/>
+    </filter>
+    <marker id="arrow" markerWidth="12" markerHeight="12" refX="10" refY="6" orient="auto">
+      <path d="M0 0 L12 6 L0 12 z" fill="#67809B"/>
+    </marker>
+    <style>
+      .title { font: 700 42px Arial, sans-serif; fill: #FFFFFF; }
+      .subtitle { font: 400 18px Arial, sans-serif; fill: #DDE8F4; }
+      .eyebrow { font: 700 13px Arial, sans-serif; letter-spacing: 1.4px; fill: #7B8DA3; }
+      .panel-title { font: 700 25px Arial, sans-serif; fill: #152337; }
+      .panel-text { font: 400 15px Arial, sans-serif; fill: #4D6075; }
+      .white-title { font: 700 23px Arial, sans-serif; fill: #FFFFFF; }
+      .white-text { font: 400 15px Arial, sans-serif; fill: #EAF2FF; }
+      .tiny { font: 400 12.5px Arial, sans-serif; fill: #6B7C90; }
+      .code { font: 400 14px "SFMono-Regular", Consolas, "Liberation Mono", monospace; fill: #DCE8F7; }
+      .code-dim { font: 400 13px "SFMono-Regular", Consolas, "Liberation Mono", monospace; fill: #91A7C0; }
+      .step { font: 700 14px Arial, sans-serif; fill: #213249; }
+      .chip { font: 700 13px Arial, sans-serif; fill: #213249; }
+      .chip-muted { font: 400 12px Arial, sans-serif; fill: #60758C; }
+      .pill { font: 700 12px Arial, sans-serif; fill: #FFFFFF; letter-spacing: .7px; }
+      .line { stroke: #67809B; stroke-width: 2.5; fill: none; marker-end: url(#arrow); }
+      .light-line { stroke: #B9C7D5; stroke-width: 2; fill: none; marker-end: url(#arrow); }
+      .dot { fill: #D8E2EC; }
+    </style>
+  </defs>
+
+  <rect width="1440" height="940" fill="url(#page)"/>
+  <rect x="46" y="38" width="1348" height="134" rx="16" fill="url(#navy)" filter="url(#shadow)"/>
+  <text x="84" y="91" class="title">TheoremAudit Access Interfaces</text>
+  <text x="84" y="126" class="subtitle">Three ways to enter one governed evidence workflow. Users choose the interface and intent; TheoremAudit controls validation and routing.</text>
+  <rect x="1138" y="76" width="190" height="46" rx="23" fill="#FFFFFF" opacity=".12"/>
+  <text x="1170" y="104" class="pill">CODEX PLUGIN</text>
+
+  <text x="70" y="220" class="eyebrow">ACCESS INTERFACE 1</text>
+  <text x="744" y="220" class="eyebrow">ACCESS INTERFACES 2 AND 3</text>
+
+  <rect x="70" y="242" width="610" height="306" rx="14" fill="url(#card)" stroke="#D7E0EA" filter="url(#shadow)"/>
+  <rect x="96" y="268" width="74" height="74" rx="18" fill="url(#blue)"/>
+  <path d="M121 305h26M139 292l14 13-14 13" stroke="#FFFFFF" stroke-width="5" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="196" y="293" class="panel-title">Use Codex conversation</text>
+  <text x="196" y="322" class="panel-text">Best for natural-language research control, follow-up repair,</text>
+  <text x="196" y="344" class="panel-text">revision requests, and evidence-aware inspection.</text>
+
+  <rect x="96" y="384" width="536" height="118" rx="10" fill="#122238"/>
+  <circle cx="122" cy="409" r="5" fill="#F05B5B"/>
+  <circle cx="140" cy="409" r="5" fill="#F3C14B"/>
+  <circle cx="158" cy="409" r="5" fill="#41C47D"/>
+  <text x="122" y="442" class="code">Use TheoremAudit to run a new full governed</text>
+  <text x="122" y="467" class="code">research-to-paper pipeline for:</text>
+  <text x="122" y="492" class="code-dim">&lt;your theoretical ML research question&gt;</text>
+
+  <rect x="510" y="285" width="122" height="34" rx="17" fill="#EAF0FF"/>
+  <text x="535" y="307" class="chip">Prompt</text>
+  <path class="line" d="M680 395 C710 395 714 395 744 395"/>
+  <text x="700" y="374" class="tiny">same run state</text>
+
+  <rect x="744" y="242" width="626" height="306" rx="14" fill="url(#card)" stroke="#D7E0EA" filter="url(#shadow)"/>
+  <rect x="770" y="268" width="74" height="74" rx="18" fill="url(#teal)"/>
+  <rect x="793" y="289" width="29" height="24" rx="4" fill="none" stroke="#FFFFFF" stroke-width="4"/>
+  <path d="M793 323h29" stroke="#FFFFFF" stroke-width="4" stroke-linecap="round"/>
+  <text x="870" y="293" class="panel-title">Use local interfaces</text>
+  <text x="870" y="322" class="panel-text">Best for visual run control through the web interface</text>
+  <text x="870" y="344" class="panel-text">or reproducible execution through the terminal.</text>
+
+  <text x="780" y="386" class="eyebrow">WEB INTERFACE</text>
+  <rect x="780" y="405" width="548" height="64" rx="10" fill="#122238"/>
+  <text x="804" y="432" class="code">python3 plugins/theoremgate/scripts/theoremgate.py \</text>
+  <text x="804" y="454" class="code">  --dashboard --workspace . --port 8765</text>
+
+  <text x="780" y="486" class="eyebrow">TERMINAL</text>
+  <rect x="780" y="505" width="548" height="64" rx="10" fill="#122238"/>
+  <text x="804" y="532" class="code">python3 plugins/theoremgate/scripts/theoremgate.py \</text>
+  <text x="804" y="554" class="code">  --terminal --workspace . start --question "..."</text>
+
+  <text x="70" y="610" class="eyebrow">WEB INTERFACE CLICK PATH</text>
+  <rect x="70" y="634" width="1300" height="118" rx="14" fill="#FFFFFF" stroke="#D7E0EA" filter="url(#softShadow)"/>
+
+  <rect x="102" y="672" width="162" height="44" rx="22" fill="#EDF3F8" stroke="#C9D7E5"/>
+  <text x="129" y="700" class="step">Open web UI</text>
+  <path class="light-line" d="M264 694 H324"/>
+
+  <rect x="324" y="672" width="144" height="44" rx="22" fill="#EDF3F8" stroke="#C9D7E5"/>
+  <text x="358" y="700" class="step">New run</text>
+  <path class="light-line" d="M468 694 H528"/>
+
+  <rect x="528" y="672" width="158" height="44" rx="22" fill="#EDF3F8" stroke="#C9D7E5"/>
+  <text x="558" y="700" class="step">Add scope</text>
+  <path class="light-line" d="M686 694 H746"/>
+
+  <rect x="746" y="672" width="170" height="44" rx="22" fill="#EDF3F8" stroke="#C9D7E5"/>
+  <text x="776" y="700" class="step">Enter question</text>
+  <path class="light-line" d="M916 694 H976"/>
+
+  <rect x="976" y="672" width="144" height="44" rx="22" fill="#EDF3F8" stroke="#C9D7E5"/>
+  <text x="1000" y="700" class="step">Start research</text>
+  <path class="light-line" d="M1120 694 H1180"/>
+
+  <rect x="1180" y="672" width="150" height="44" rx="22" fill="url(#amber)"/>
+  <text x="1218" y="700" class="pill">INSPECT</text>
+
+  <text x="70" y="805" class="eyebrow">WHAT CAN THE RUN BECOME?</text>
+  <rect x="70" y="832" width="246" height="56" rx="12" fill="#FFFFFF" stroke="#D7E0EA" filter="url(#softShadow)"/>
+  <circle cx="98" cy="860" r="7" fill="#2EA68F"/>
+  <text x="116" y="857" class="chip">Accepted or narrowed result</text>
+  <text x="116" y="875" class="chip-muted">Claim survives evidence gates</text>
+
+  <rect x="338" y="832" width="226" height="56" rx="12" fill="#FFFFFF" stroke="#D7E0EA" filter="url(#softShadow)"/>
+  <circle cx="366" cy="860" r="7" fill="#E29A2D"/>
+  <text x="384" y="857" class="chip">Repair request</text>
+  <text x="384" y="875" class="chip-muted">Defect is preserved</text>
+
+  <rect x="586" y="832" width="226" height="56" rx="12" fill="#FFFFFF" stroke="#D7E0EA" filter="url(#softShadow)"/>
+  <circle cx="614" cy="860" r="7" fill="#6F83A0"/>
+  <text x="632" y="857" class="chip">Evidence report</text>
+  <text x="632" y="875" class="chip-muted">Rejected or unresolved</text>
+
+  <rect x="834" y="832" width="252" height="56" rx="12" fill="#FFFFFF" stroke="#D7E0EA" filter="url(#softShadow)"/>
+  <circle cx="862" cy="860" r="7" fill="#2D55D7"/>
+  <text x="880" y="857" class="chip">Authorized manuscript</text>
+  <text x="880" y="875" class="chip-muted">Paper claims trace to proof</text>
+
+  <rect x="1108" y="832" width="262" height="56" rx="12" fill="#122238" filter="url(#softShadow)"/>
+  <text x="1134" y="857" class="pill">NO SHORTCUT AROUND VALIDATION</text>
+  <text x="1134" y="875" class="code-dim">artifacts, hashes, stages</text>
+</svg>

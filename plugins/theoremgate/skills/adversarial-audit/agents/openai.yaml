@@ -1,0 +1,5 @@
+interface:
+  display_name: "TheoremAudit Adversarial Audit"
+  short_description: "Attack assumptions, proofs, novelty, and scope."
+  default_prompt: "Use $adversarial-audit to independently audit this theoretical result."
+

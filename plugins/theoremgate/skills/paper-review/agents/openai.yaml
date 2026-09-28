@@ -1,0 +1,4 @@
+interface:
+  display_name: "TheoremAudit Paper Review"
+  short_description: "Review claim integrity, proofs, writing, and venue fit."
+  default_prompt: "Use $paper-review to independently review and revise this theory manuscript."

@@ -1,0 +1,37 @@
+{
+  "schema_version": 2,
+  "venue": "JMLR",
+  "full_name": "Journal of Machine Learning Research",
+  "publication_format": "journal",
+  "page_limit": null,
+  "page_limit_scope": "none",
+  "appendix": "included",
+  "format": "jmlr",
+  "style_file": "jmlr2e.sty",
+  "assets": [
+    {"path": "jmlr2e.sty", "role": "style", "required": true, "stage": true}
+  ],
+  "snapshot_provenance": {
+    "source_url": null,
+    "captured_at": null,
+    "official_rules_verified": false,
+    "official_rules_verified_at": null,
+    "redistribution_evidence": null,
+    "redistribution_status": "unverified"
+  },
+  "blind_review": false,
+  "empirical_expected": false,
+  "theory_track": true,
+  "rolling_review": true,
+  "typical_deadline": "rolling",
+  "notification": "3-12 months",
+  "world_fit": [
+    "theorem_paper",
+    "framework_paper",
+    "negative_result_paper"
+  ],
+  "theory_bar": "very_high",
+  "novelty_bar": "high",
+  "notes": "No page limit. Full proofs expected in body. Long review process (6-18 months). Highest quality bar for ML theory journals.",
+  "bibstyle": "plainnat"
+}

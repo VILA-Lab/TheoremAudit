@@ -1,0 +1,45 @@
+{
+  "schema_version": 2,
+  "venue": "NeurIPS",
+  "full_name": "Conference on Neural Information Processing Systems",
+  "publication_format": "conference",
+  "page_limit": 9,
+  "page_limit_scope": "main_text",
+  "appendix": "unlimited",
+  "format": "neurips",
+  "style_file": "neurips_2026.sty",
+  "assets": [
+    {"path": "neurips_2026.sty", "role": "style", "required": true, "stage": true},
+    {"path": "neurips_2026.tex", "role": "main_tex", "required": true, "stage": true},
+    {"path": "checklist.tex", "role": "checklist", "required": true, "stage": true}
+  ],
+  "snapshot_provenance": {
+    "source_url": null,
+    "captured_at": null,
+    "official_rules_verified": false,
+    "official_rules_verified_at": null,
+    "redistribution_evidence": null,
+    "redistribution_status": "unverified"
+  },
+  "blind_review": true,
+  "empirical_expected": true,
+  "theory_track": false,
+  "rolling_review": false,
+  "typical_deadline": "May",
+  "notification": "September",
+  "world_fit": [
+    "theorem_paper",
+    "framework_paper"
+  ],
+  "theory_bar": "high",
+  "novelty_bar": "very_high",
+  "notes": "Most competitive ML venue. Theory papers accepted but empirical component strongly expected.",
+  "files": [
+    "neurips_2026.sty",
+    "neurips_2026.tex",
+    "checklist.tex"
+  ],
+  "main_tex": "neurips_2026.tex",
+  "checklist_required": true,
+  "checklist_file": "checklist.tex"
+}

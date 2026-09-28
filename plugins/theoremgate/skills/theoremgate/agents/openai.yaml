@@ -1,0 +1,4 @@
+interface:
+  display_name: "TheoremAudit"
+  short_description: "Develop audited theory and a reviewed paper package."
+  default_prompt: "Use $theoremgate to run the full governed research-to-paper workflow for this question."

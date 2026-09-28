@@ -1,0 +1,193 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="900" viewBox="0 0 1200 900" role="img" aria-labelledby="title desc">
+  <title id="title">TheoremAudit manuscript workflow</title>
+  <desc id="desc">A compact manuscript-side TheoremAudit workflow: accepted theory bundle, literature audit, exemplar study, venue selection, content architecture, empirical validation, section writing, compilation, independent review, revision, and final package.</desc>
+  <defs>
+    <linearGradient id="page" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#F8FAFC"/>
+      <stop offset="0.65" stop-color="#EEF5F7"/>
+      <stop offset="1" stop-color="#F7F3EA"/>
+    </linearGradient>
+    <linearGradient id="navy" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#102033"/>
+      <stop offset="1" stop-color="#263D5F"/>
+    </linearGradient>
+    <linearGradient id="teal" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#087568"/>
+      <stop offset="1" stop-color="#27A78E"/>
+    </linearGradient>
+    <linearGradient id="blue" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#2D55D7"/>
+      <stop offset="1" stop-color="#6D96ED"/>
+    </linearGradient>
+    <linearGradient id="amber" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#C87317"/>
+      <stop offset="1" stop-color="#F0B44C"/>
+    </linearGradient>
+    <linearGradient id="rose" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#B84542"/>
+      <stop offset="1" stop-color="#E87268"/>
+    </linearGradient>
+    <linearGradient id="card" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#FFFFFF"/>
+      <stop offset="1" stop-color="#F8FBFE"/>
+    </linearGradient>
+    <filter id="shadow" x="-10%" y="-12%" width="120%" height="136%">
+      <feDropShadow dx="0" dy="12" stdDeviation="11" flood-color="#132B42" flood-opacity="0.13"/>
+    </filter>
+    <filter id="softShadow" x="-10%" y="-12%" width="120%" height="136%">
+      <feDropShadow dx="0" dy="7" stdDeviation="6" flood-color="#132B42" flood-opacity="0.10"/>
+    </filter>
+    <marker id="arrow" markerWidth="12" markerHeight="12" refX="10" refY="6" orient="auto">
+      <path d="M0 0 L12 6 L0 12 z" fill="#566E88"/>
+    </marker>
+    <marker id="arrowTeal" markerWidth="12" markerHeight="12" refX="10" refY="6" orient="auto">
+      <path d="M0 0 L12 6 L0 12 z" fill="#128575"/>
+    </marker>
+    <marker id="arrowRed" markerWidth="12" markerHeight="12" refX="10" refY="6" orient="auto">
+      <path d="M0 0 L12 6 L0 12 z" fill="#B84542"/>
+    </marker>
+    <style>
+      .title { font: 700 34px Arial, sans-serif; fill: #FFFFFF; }
+      .subtitle { font: 400 16px Arial, sans-serif; fill: #DDE8F4; }
+      .step-title { font: 700 15.5px Arial, sans-serif; fill: #142337; }
+      .step-text { font: 400 11.8px Arial, sans-serif; fill: #52657A; }
+      .small { font: 400 11.5px Arial, sans-serif; fill: #63768A; }
+      .no { font: 700 12px Arial, sans-serif; fill: #FFFFFF; }
+      .chip { font: 700 11.5px Arial, sans-serif; fill: #FFFFFF; letter-spacing: .6px; }
+      .dark-chip { font: 700 11.5px Arial, sans-serif; fill: #203048; }
+      .decision { font: 700 15px Arial, sans-serif; fill: #142337; }
+      .line { stroke: #566E88; stroke-width: 2.3; fill: none; marker-end: url(#arrow); }
+      .red-line { stroke: #B84542; stroke-width: 2.3; fill: none; marker-end: url(#arrowRed); }
+      .teal-line { stroke: #128575; stroke-width: 2.5; fill: none; marker-end: url(#arrowTeal); }
+      .dash { stroke-dasharray: 7 7; }
+    </style>
+  </defs>
+
+  <rect width="1200" height="900" fill="url(#page)"/>
+  <rect x="44" y="36" width="1112" height="112" rx="16" fill="url(#navy)" filter="url(#shadow)"/>
+  <text x="76" y="84" class="title">TheoremAudit Manuscript Workflow</text>
+  <text x="76" y="116" class="subtitle">A post-theory pipeline that turns accepted claims into a reviewed package without bypassing evidence checks.</text>
+  <rect x="948" y="70" width="154" height="38" rx="19" fill="#FFFFFF" opacity=".13"/>
+  <text x="974" y="94" class="chip">POST-THEORY</text>
+
+  <rect x="54" y="198" width="208" height="122" rx="14" fill="#FFFFFF" stroke="#D7E0EA" filter="url(#softShadow)"/>
+  <circle cx="89" cy="235" r="21" fill="url(#teal)"/>
+  <path d="M78 236l8 8 15-20" stroke="#FFFFFF" stroke-width="4.3" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="122" y="229" class="step-title">Accepted Theory</text>
+  <text x="122" y="249" class="step-title">Bundle</text>
+  <text x="82" y="286" class="step-text">Accepted claims, proofs, route,</text>
+  <text x="82" y="304" class="step-text">and manuscript authorization.</text>
+
+  <path class="line" d="M262 259 H302"/>
+
+  <rect x="302" y="198" width="190" height="122" rx="14" fill="url(#card)" stroke="#D7E0EA" filter="url(#softShadow)"/>
+  <circle cx="330" cy="226" r="13" fill="url(#blue)"/>
+  <text x="326" y="231" class="no">1</text>
+  <text x="356" y="225" class="step-title">Literature Audit</text>
+  <text x="329" y="267" class="step-text">Verify citations, closest work,</text>
+  <text x="329" y="285" class="step-text">attribution, and claim use.</text>
+
+  <path class="line" d="M492 259 H532"/>
+
+  <rect x="532" y="198" width="190" height="122" rx="14" fill="url(#card)" stroke="#D7E0EA" filter="url(#softShadow)"/>
+  <circle cx="560" cy="226" r="13" fill="url(#amber)"/>
+  <text x="556" y="231" class="no">2</text>
+  <text x="586" y="225" class="step-title">Exemplar Study</text>
+  <text x="559" y="267" class="step-text">Study matched papers for</text>
+  <text x="559" y="285" class="step-text">structure and venue norms.</text>
+
+  <path class="line" d="M722 259 H762"/>
+
+  <rect x="762" y="198" width="190" height="122" rx="14" fill="url(#card)" stroke="#D7E0EA" filter="url(#softShadow)"/>
+  <circle cx="790" cy="226" r="13" fill="#6B59D3"/>
+  <text x="786" y="231" class="no">3</text>
+  <text x="816" y="225" class="step-title">Venue Selection</text>
+  <text x="789" y="267" class="step-text">Stage template and record</text>
+  <text x="789" y="285" class="step-text">limits, rules, and evidence.</text>
+
+  <path class="line" d="M857 320 V370"/>
+
+  <rect x="762" y="370" width="190" height="122" rx="14" fill="url(#card)" stroke="#D7E0EA" filter="url(#softShadow)"/>
+  <circle cx="790" cy="398" r="13" fill="url(#teal)"/>
+  <text x="786" y="403" class="no">4</text>
+  <text x="816" y="397" class="step-title">Content Architecture</text>
+  <text x="789" y="439" class="step-text">Plan title, sections, proof</text>
+  <text x="789" y="457" class="step-text">placement, figures, pages.</text>
+
+  <path class="line" d="M762 431 H722"/>
+
+  <rect x="532" y="370" width="190" height="122" rx="14" fill="url(#card)" stroke="#D7E0EA" filter="url(#softShadow)"/>
+  <circle cx="560" cy="398" r="13" fill="url(#rose)"/>
+  <text x="556" y="403" class="no">5</text>
+  <text x="586" y="397" class="step-title">Empirical Validation</text>
+  <text x="559" y="439" class="step-text">Run support or stress tests;</text>
+  <text x="559" y="457" class="step-text">produce hash-bound figures.</text>
+
+  <path class="line" d="M532 431 H492"/>
+
+  <rect x="302" y="370" width="190" height="122" rx="14" fill="url(#card)" stroke="#D7E0EA" filter="url(#softShadow)"/>
+  <circle cx="330" cy="398" r="13" fill="url(#blue)"/>
+  <text x="326" y="403" class="no">6</text>
+  <text x="356" y="397" class="step-title">Section Writing</text>
+  <text x="329" y="439" class="step-text">Write sections, results, related</text>
+  <text x="329" y="457" class="step-text">work, figures, and appendix.</text>
+
+  <path class="line" d="M397 492 V544"/>
+
+  <rect x="302" y="544" width="190" height="122" rx="14" fill="url(#card)" stroke="#D7E0EA" filter="url(#softShadow)"/>
+  <circle cx="330" cy="572" r="13" fill="url(#amber)"/>
+  <text x="326" y="577" class="no">7</text>
+  <text x="356" y="571" class="step-title">Compile and Check</text>
+  <text x="329" y="613" class="step-text">Assemble LaTeX, compile PDF,</text>
+  <text x="329" y="631" class="step-text">measure layout and pages.</text>
+
+  <path class="line" d="M492 605 H548"/>
+  <polygon points="632,544 718,605 632,666 546,605" fill="#EEF3F7" stroke="#C9D7E5" filter="url(#softShadow)"/>
+  <text x="600" y="598" class="decision">Compile</text>
+  <text x="606" y="618" class="decision">clean?</text>
+
+  <path class="red-line" d="M632 666 V704 H292 V431 H302"/>
+  <rect x="490" y="686" width="190" height="36" rx="18" fill="#FFF4EF" stroke="#E7B7A9"/>
+  <text x="530" y="709" class="dark-chip">presentation repair</text>
+
+  <path class="line" d="M718 605 H762"/>
+  <rect x="762" y="544" width="190" height="122" rx="14" fill="url(#card)" stroke="#D7E0EA" filter="url(#softShadow)"/>
+  <circle cx="790" cy="572" r="13" fill="url(#teal)"/>
+  <text x="786" y="577" class="no">8</text>
+  <text x="816" y="571" class="step-title">Independent Review</text>
+  <text x="789" y="613" class="step-text">Check claim-evidence fit, proofs,</text>
+  <text x="789" y="631" class="step-text">citations, figures, and venue.</text>
+
+  <path class="line" d="M952 605 H1000"/>
+  <polygon points="1076,544 1148,605 1076,666 1004,605" fill="#EEF3F7" stroke="#C9D7E5" filter="url(#softShadow)"/>
+  <text x="1048" y="598" class="decision">Review</text>
+  <text x="1048" y="618" class="decision">verdict</text>
+
+  <path class="teal-line" d="M1076 666 V760 H244"/>
+  <rect x="54" y="718" width="190" height="86" rx="14" fill="url(#teal)" filter="url(#softShadow)"/>
+  <text x="82" y="754" class="chip">FINAL PACKAGE</text>
+  <text x="82" y="780" class="subtitle" style="font-size:13px">PDF, source, reviews,</text>
+  <text x="82" y="798" class="subtitle" style="font-size:13px">hashes, and trace.</text>
+
+  <path class="red-line" d="M1076 666 V742 H292 V431 H302"/>
+  <rect x="702" y="724" width="228" height="36" rx="18" fill="#FFF4EF" stroke="#E7B7A9"/>
+  <text x="736" y="747" class="dark-chip">revise manuscript and re-review</text>
+
+  <path class="red-line dash" d="M1076 544 C1076 506 1062 486 1052 492"/>
+  <rect x="956" y="455" width="190" height="36" rx="18" fill="#FFF4EF" stroke="#E7B7A9"/>
+  <text x="993" y="478" class="dark-chip">theory change required</text>
+
+  <rect x="54" y="394" width="208" height="112" rx="14" fill="#122238" filter="url(#softShadow)"/>
+  <text x="82" y="430" class="chip">NO MANUSCRIPT SHORTCUT</text>
+  <text x="82" y="460" class="subtitle" style="font-size:13px">Only accepted claims can be</text>
+  <text x="82" y="478" class="subtitle" style="font-size:13px">written as results.</text>
+
+  <rect x="988" y="198" width="168" height="122" rx="14" fill="#FFFFFF" stroke="#D7E0EA" filter="url(#softShadow)"/>
+  <text x="1014" y="232" class="step-title">Possible exits</text>
+  <circle cx="1018" cy="266" r="5.5" fill="#128575"/>
+  <text x="1034" y="270" class="small">final package</text>
+  <circle cx="1018" cy="294" r="5.5" fill="#C87317"/>
+  <text x="1034" y="298" class="small">warnings package</text>
+  <circle cx="1018" cy="322" r="5.5" fill="#B84542"/>
+  <text x="1034" y="326" class="small">blocked by theory</text>
+</svg>

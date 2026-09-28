@@ -1,0 +1,107 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="430" viewBox="0 0 1400 430" role="img" aria-labelledby="title desc">
+  <title id="title">TheoremAudit global overview</title>
+  <desc id="desc">A global overview of TheoremAudit showing a research question flowing through evidence-governed claim stages to accepted, repaired, rejected, or manuscript-authorized outcomes.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#0F2033"/>
+      <stop offset="0.55" stop-color="#203B61"/>
+      <stop offset="1" stop-color="#177A6B"/>
+    </linearGradient>
+    <linearGradient id="panel" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#FFFFFF" stop-opacity=".98"/>
+      <stop offset="1" stop-color="#F4F8FC" stop-opacity=".98"/>
+    </linearGradient>
+    <linearGradient id="blue" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#3157D5"/>
+      <stop offset="1" stop-color="#6A93EF"/>
+    </linearGradient>
+    <linearGradient id="amber" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#B66D12"/>
+      <stop offset="1" stop-color="#E5A33D"/>
+    </linearGradient>
+    <filter id="shadow" x="-6%" y="-10%" width="112%" height="130%">
+      <feDropShadow dx="0" dy="12" stdDeviation="12" flood-color="#07111C" flood-opacity=".24"/>
+    </filter>
+    <marker id="arrow" markerWidth="12" markerHeight="12" refX="10" refY="6" orient="auto">
+      <path d="M0 0 L12 6 L0 12 z" fill="#DCE8F7"/>
+    </marker>
+    <style>
+      .hero { font: 700 40px Arial, sans-serif; fill: #FFFFFF; }
+      .sub { font: 400 17px Arial, sans-serif; fill: #DCE8F7; }
+      .label { font: 700 12px Arial, sans-serif; letter-spacing: 1.2px; fill: #6B7C90; }
+      .title { font: 700 19px Arial, sans-serif; fill: #172335; }
+      .text { font: 400 14px Arial, sans-serif; fill: #4D6075; }
+      .white { font: 700 14px Arial, sans-serif; fill: #FFFFFF; }
+      .chip { font: 700 13px Arial, sans-serif; fill: #203247; }
+      .line { stroke: #DCE8F7; stroke-width: 2.6; fill: none; marker-end: url(#arrow); opacity: .9; }
+      .soft { stroke: #C9D7E5; stroke-width: 1.5; fill: none; }
+    </style>
+  </defs>
+
+  <rect width="1400" height="430" rx="22" fill="url(#bg)"/>
+  <text x="64" y="70" class="hero">TheoremAudit</text>
+  <text x="64" y="105" class="sub">Evidence-governed AI assistance for theoretical machine-learning research.</text>
+
+  <rect x="64" y="150" width="230" height="132" rx="14" fill="url(#panel)" filter="url(#shadow)"/>
+  <text x="91" y="184" class="label">INPUT</text>
+  <text x="91" y="216" class="title">Research question</text>
+  <text x="91" y="244" class="text">Topic, theorem idea,</text>
+  <text x="91" y="266" class="text">or research direction</text>
+
+  <path class="line" d="M294 216 H362"/>
+
+  <rect x="362" y="124" width="510" height="184" rx="16" fill="#FFFFFF" fill-opacity=".14" stroke="#FFFFFF" stroke-opacity=".28"/>
+  <text x="390" y="158" class="white">CLAIM LIFECYCLE</text>
+
+  <rect x="390" y="184" width="124" height="62" rx="10" fill="url(#panel)"/>
+  <text x="413" y="209" class="chip">Formalize</text>
+  <text x="410" y="231" class="text">assumptions</text>
+
+  <rect x="542" y="184" width="124" height="62" rx="10" fill="url(#panel)"/>
+  <text x="575" y="209" class="chip">Prove</text>
+  <text x="565" y="231" class="text">obligations</text>
+
+  <rect x="694" y="184" width="124" height="62" rx="10" fill="url(#panel)"/>
+  <text x="730" y="209" class="chip">Audit</text>
+  <text x="714" y="231" class="text">counterclaims</text>
+
+  <path class="soft" d="M514 215 H542"/>
+  <path class="soft" d="M666 215 H694"/>
+
+  <rect x="466" y="262" width="276" height="28" rx="14" fill="#FFFFFF" fill-opacity=".18" stroke="#FFFFFF" stroke-opacity=".26"/>
+  <text x="500" y="282" class="white">persistent artifacts + evidence hashes</text>
+
+  <path class="line" d="M872 216 H940"/>
+
+  <rect x="940" y="124" width="184" height="184" rx="16" fill="url(#panel)" filter="url(#shadow)"/>
+  <text x="970" y="158" class="label">GOVERNANCE</text>
+  <text x="970" y="190" class="title">Accept, repair,</text>
+  <text x="970" y="214" class="title">narrow, defer,</text>
+  <text x="970" y="238" class="title">or reject</text>
+  <text x="970" y="272" class="text">No claim advances</text>
+  <text x="970" y="292" class="text">without evidence.</text>
+
+  <path class="line" d="M1124 216 H1192"/>
+
+  <rect x="1192" y="86" width="152" height="56" rx="12" fill="#FFFFFF" filter="url(#shadow)"/>
+  <circle cx="1218" cy="114" r="7" fill="#2EA68F"/>
+  <text x="1234" y="119" class="chip">Accepted result</text>
+
+  <rect x="1192" y="158" width="152" height="56" rx="12" fill="#FFFFFF" filter="url(#shadow)"/>
+  <circle cx="1218" cy="186" r="7" fill="#E5A33D"/>
+  <text x="1234" y="191" class="chip">Repair request</text>
+
+  <rect x="1192" y="230" width="152" height="56" rx="12" fill="#FFFFFF" filter="url(#shadow)"/>
+  <circle cx="1218" cy="258" r="7" fill="#6B7C90"/>
+  <text x="1234" y="263" class="chip">Evidence report</text>
+
+  <rect x="1192" y="302" width="152" height="56" rx="12" fill="#FFFFFF" filter="url(#shadow)"/>
+  <circle cx="1218" cy="330" r="7" fill="#3157D5"/>
+  <text x="1234" y="335" class="chip">Manuscript route</text>
+
+  <rect x="64" y="334" width="560" height="42" rx="21" fill="#FFFFFF" fill-opacity=".13" stroke="#FFFFFF" stroke-opacity=".24"/>
+  <text x="88" y="361" class="sub">Model-generated reasoning is separated from controller-enforced acceptance.</text>
+
+  <rect x="660" y="334" width="464" height="42" rx="21" fill="url(#amber)" opacity=".95"/>
+  <text x="690" y="361" class="white">Claims become paper-facing only after proof, audit, and governance evidence.</text>
+</svg>

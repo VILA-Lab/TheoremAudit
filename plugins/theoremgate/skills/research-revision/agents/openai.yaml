@@ -1,0 +1,4 @@
+interface:
+  display_name: "TheoremAudit Research Revision"
+  short_description: "Resume, repair, or rerun governed research safely."
+  default_prompt: "Use $research-revision to route this requested rerun without losing completed evidence."
