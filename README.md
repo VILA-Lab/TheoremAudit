@@ -1,13 +1,15 @@
 <p align="center">
-  <img src="plugins/theoremgate/assets/icon.svg" alt="" width="64" height="64">
+  <img src="plugins/theoremgate/assets/icon.svg" alt="" width="124" height="124">
 </p>
 
 <h1 align="center">TheoremAudit</h1>
 
+<h1
 <p align="center">
   <strong>A self-proving and self-verifying system<br>
-  for automated theoretical machine learning paper generation.</strong>
+  for automated theoretical machine learning paper generation</strong>
 </p>
+</h1>
 
 <p align="center">
   <a href="https://help.openai.com/en/articles/20001256-plugins-in-codex"><img alt="Codex plugin" src="https://img.shields.io/badge/Codex-plugin-185B59?style=flat-square"></a>
