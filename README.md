@@ -113,11 +113,7 @@ inspection, and manuscript traceability.
 
 ## Selected Generated Papers
 
-Explore how a research request develops into a manuscript with theoretical results, supporting
-proofs, and numerical studies. The requests below reproduce the saved inputs for each run.
-These are generated research drafts, not peer-reviewed publications; the system's review does
-not independently certify correctness or novelty. Some PDFs retain review-template labels,
-which do not establish actual submission or peer-review status.
+The following PDFs are examples of generated machine-learning research drafts produced from saved research requests. They are provided for demonstration only and are not peer-reviewed publications.
 
 | Research request | Generated paper | Read |
 |:---|:---|:---|
