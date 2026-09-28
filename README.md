@@ -68,6 +68,7 @@ research prompts; the canonical repository is `VILA-Lab/TheoremAudit`.
       <td valign="top">
         <a href="#start-here">🌟 Start Here</a><br>
         <a href="#demonstration">🎥 Demonstration</a><br>
+        <a href="#selected-generated-papers">📄 Selected Generated Papers</a><br>
         <a href="#quick-start">🚀 Quick Start</a><br>
         <a href="#inputs-and-outputs">📦 Inputs and Outputs</a><br>
         <a href="#updating-the-plugin">🔄 Updating the Plugin</a>
@@ -96,6 +97,7 @@ Choose the route that matches what you want to do:
 |:---|:---|
 | 🚀 **[Quick Start](#quick-start)** | Installing the plugin and beginning a new research run. |
 | 🖥️ **[Web Interface](#web-interface)** | Starting, resuming, or inspecting a run in the browser. |
+| 📄 **[Selected Generated Papers](#selected-generated-papers)** | Reading example manuscripts produced by TheoremAudit. |
 | ⌨️ **[Terminal](#terminal)** | Starting or resuming a run with explicit commands. |
 | 📖 **[User Guide](docs/walkthrough.md)** | Starting, inspecting, and revising a research run. |
 | 🔎 **[How It Works](#how-it-works)** | Understand the proof and review process. |
@@ -108,6 +110,16 @@ https://github.com/user-attachments/assets/7836998d-5b3b-4583-b148-9794fd25c388
 
 The screencast shows the local web interface, research progress, claim review, evidence
 inspection, and manuscript traceability.
+
+## Selected Generated Papers
+
+Explore selected research manuscripts produced by TheoremAudit, including theoretical results,
+supporting proofs, and numerical studies. These are generated research drafts, not peer-reviewed
+publications; the system's review does not independently certify correctness or novelty.
+
+| Paper | Research focus | Read |
+|:---|:---|:---|
+| **Signed Local-Response Extrapolation for Heterogeneous Quadratic Federated Optimization** | Bias correction in local quadratic optimization, its noise cost, and comparison with direct minibatching. | [PDF · 21 pages](docs/generated-papers/federated-optimization.pdf) |
 
 ## Capabilities
 
