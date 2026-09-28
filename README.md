@@ -4,12 +4,12 @@
 
 <h1 align="center">TheoremAudit</h1>
 
-<h1
+<h2
 <p align="center">
   <strong>A self-proving and self-verifying system<br>
   for automated theoretical machine learning paper generation</strong>
 </p>
-</h1>
+</h2>
 
 <p align="center">
   <a href="https://help.openai.com/en/articles/20001256-plugins-in-codex"><img alt="Codex plugin" src="https://img.shields.io/badge/Codex-plugin-185B59?style=flat-square"></a>
