@@ -113,13 +113,20 @@ inspection, and manuscript traceability.
 
 ## Selected Generated Papers
 
-Explore selected research manuscripts produced by TheoremAudit, including theoretical results,
-supporting proofs, and numerical studies. These are generated research drafts, not peer-reviewed
-publications; the system's review does not independently certify correctness or novelty.
+Explore how a research request develops into a manuscript with theoretical results, supporting
+proofs, and numerical studies. The requests below reproduce the saved inputs for each run.
+These are generated research drafts, not peer-reviewed publications; the system's review does
+not independently certify correctness or novelty. Some PDFs retain review-template labels,
+which do not establish actual submission or peer-review status.
 
-| Paper | Research focus | Read |
+| Research request | Generated paper | Read |
 |:---|:---|:---|
-| **Signed Local-Response Extrapolation for Heterogeneous Quadratic Federated Optimization** | Bias correction in local quadratic optimization, its noise cost, and comparison with direct minibatching. | [PDF · 21 pages](docs/generated-papers/federated-optimization.pdf) |
+| Develop and write a full theoretical research paper on compression of text representations. | **Corpus-Adaptive Pivotal Rounding for Pooled Text Representations** | [PDF · 21 pages](docs/generated-papers/text-representation-compression.pdf) |
+| Develop and write a full theoretical research paper on learning under fairness constraints. | **Uniform Population Fairness: Common Kernels and Finite-Sample Utility** | [PDF · 24 pages](docs/generated-papers/population-fairness.pdf) |
+| Use TheoremAudit to write a full theoretical research paper on uncertainty quantification in classification. | **Coverage Certificates under Nonidentifiable Label Shift** | [PDF · 15 pages](docs/generated-papers/label-shift-coverage.pdf) |
+| Use TheoremAudit to write a full theoretical research paper on optimization for regularized learning | **Second-Order Support Certification for Inexact Regularized Optimization** | [PDF · 14 pages](docs/generated-papers/regularized-optimization.pdf) |
+| Use TheoremAudit to write a full theoretical research paper on uncertainty quantification for text classification. | **Prediction Sets under Heterogeneous Annotation Noise: Exact Efficiency Limits for Binary Text Strata** | [PDF · 20 pages](docs/generated-papers/annotation-noise-prediction-sets.pdf) |
+| Develop and write a full theoretical research paper on federated learning with heterogeneous data. | **Signed Local-Response Extrapolation for Heterogeneous Quadratic Federated Optimization** | [PDF · 21 pages](docs/generated-papers/federated-optimization.pdf) |
 
 ## Capabilities
 
